@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    background-color: rgb(44, 30 ,40);
+}
+.logo img{
+    height: 200px;
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.left{
+    text-align: center;
+    width: 33%;
+    float: left;
+    height: 300px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.center{
+    text-align: center;
+    width: 33%;
+    float: left;
+    height: 300px;
+    background-color: rgb(113,77,140);
+    border: 1px solid black;
+
+
+}
+.copyright{
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
