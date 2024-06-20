@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        //function hide(){
+          //  alert("hide is clicked");
+           // document.getElementById("box").style.display="none";
+       // }
+        //function show(){
+          //  alert("show is clicked");
+          //  document.getElementById("box").style.display="block";
+       // }
+        function show_hide(){
+            if(document.getElementById("box").style.display=="none")
+            document.getElementById("box").style.display="block";
+        else
+        document.getElementById("box").style.display="none";
+        }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="click" onclick="show_hide()">show/hide</button>
+    
+</body>
+</html>

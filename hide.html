@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWHIDE</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+        }
+    </style>
+    <script>
+        function hide(){
+            document.getElementById("box").style.display="none";
+        }
+        function show(){
+            document.getElementById("box").style.display= "block";
+        }
+    </script>   
+</head>
+<body>
+    <div id="box"></div>
+    <button id="show" onclick="show()">show</button>
+    <button id="hide" onclick="hide()">hide</button>
+
+</body>
+   
+</html>

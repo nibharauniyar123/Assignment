@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate(){
+          //  alert("hello" + " "+name);
+          var num1 = document.getElementById("number1").value;
+          var num2 = document.getElementById("number2").value;
+          document.getElementById("result").innerHTML=(parseInt(num1)+parseInt(num2));
+          
+        }
+        //sayhello(); //calling function
+    </script>
+    <style>
+        #result{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="number1" id="number1"/>
+    <input type="text" name="number2" id="number2"/>
+    <select>
+        <option>add</option>
+        <option>sub</option>
+        <option>mul</option>
+        <option>div</option>
+    </select>
+    <button onclick="calculate()">calculate</button>
+    <p id="result"></p>
+    
+</body>
+</html>
