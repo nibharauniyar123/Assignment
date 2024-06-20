@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        #err{
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Simple form</h2>
+    <!--<form action="#" method="post">-->
+<label for="username">username:</label>
+<input type="text" name="username" id="username"/> <span id="err"></span>
+<p>
+    <input type="button" value="submit" onclick="validate()"/>
+</p>
+</form>
+    <script type="text/javascript">
+        function clearmessage(){
+            document.getElementById("err").innerHTML = "";
+        }
+        function validate(){
+    var username = document.getElementById("username").value;
+    if(username == null || username == ""){
+        document.getElementById("err").innerText = "* required";
+    }
+}
+
+    </script>
+</body>
+</html>
